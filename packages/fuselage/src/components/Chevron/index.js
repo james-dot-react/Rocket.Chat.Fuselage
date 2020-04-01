@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types';
 import React, { useMemo } from 'react';
 
+import { sizePropType } from '../../propTypes/sizes';
 import { Box } from '../Box';
 import { Icon } from '../Icon';
-import { sizePropType } from '../../propTypes/sizes';
 
 export function Chevron({
   up,
@@ -13,7 +13,7 @@ export function Chevron({
   size,
   ...props
 }) {
-  const children = useMemo(() => <Icon name='arrow-down' size={size} />, [size]);
+  const children = useMemo(() => <Icon name='chevron-down' size={size} />, [size]);
 
   return <Box
     componentClassName='rcx-chevron'
